@@ -1,7 +1,7 @@
 import { AsyncStorage } from 'react-native';
-import createDataContext from './createDataContext';
 import trackerApi from '../api/tracker';
 import { navigate } from '../navigationRef';
+import createDataContext from './createDataContext';
 
 const authReducer = (state, action) => {
   switch (action.type) {
