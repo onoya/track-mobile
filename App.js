@@ -1,9 +1,11 @@
+import React from 'react';
 import {
   createAppContainer,
   createBottomTabNavigator,
   createStackNavigator,
   createSwitchNavigator,
 } from 'react-navigation';
+import { Provider as AuthProvider } from './src/context/AuthContext';
 import AccountScreen from './src/screens/AccountScreen';
 import SigninScreen from './src/screens/SigninScreen';
 import SignupScreen from './src/screens/SignupScreen';
@@ -26,4 +28,10 @@ const switchNavigator = createSwitchNavigator({
   }),
 });
 
-export default createAppContainer(switchNavigator);
+const App = createAppContainer(switchNavigator);
+
+export default () => (
+  <AuthProvider>
+    <App />
+  </AuthProvider>
+);
