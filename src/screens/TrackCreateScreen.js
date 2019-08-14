@@ -6,7 +6,7 @@ import Map from '../components/Map';
 import TrackForm from '../components/TrackForm';
 import { Context as LocationContext } from '../context/LocationContext';
 import useLocation from '../hooks/useLocation';
-import '../_mockLocation';
+// import '../_mockLocation';
 
 const TrackCreateScreen = ({ isFocused }) => {
   const {
