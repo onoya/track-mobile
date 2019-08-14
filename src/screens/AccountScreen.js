@@ -1,5 +1,5 @@
+import { FontAwesome } from '@expo/vector-icons';
 import React, { useContext } from 'react';
-import { StyleSheet } from 'react-native';
 import { Button, Text } from 'react-native-elements';
 import { SafeAreaView } from 'react-navigation';
 import Spacer from '../components/Spacer';
@@ -17,6 +17,9 @@ const AccountScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+AccountScreen.navigationOptions = {
+  title: 'Account',
+  tabBarIcon: <FontAwesome name="gear" size={20} />,
+};
 
 export default AccountScreen;

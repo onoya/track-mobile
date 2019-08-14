@@ -1,3 +1,4 @@
+import { FontAwesome } from '@expo/vector-icons';
 import React, { useCallback, useContext } from 'react';
 import { StyleSheet } from 'react-native';
 import { Text } from 'react-native-elements';
@@ -28,6 +29,9 @@ const TrackCreateScreen = ({ isFocused }) => {
   );
 };
 
-const styles = StyleSheet.create({});
+TrackCreateScreen.navigationOptions = {
+  title: 'Add Track',
+  tabBarIcon: <FontAwesome name="plus" size={20} />,
+};
 
 export default withNavigationFocus(TrackCreateScreen);

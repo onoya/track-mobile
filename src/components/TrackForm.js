@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { Button, Input } from 'react-native-elements';
-import Spacer from './Spacer';
 import { Context as LocationContext } from '../context/LocationContext';
 import useSaveTrack from '../hooks/useSaveTrack';
+import Spacer from './Spacer';
 
 const TrackForm = () => {
   const {
